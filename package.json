@@ -1,0 +1,73 @@
+{
+  "name": "bootpack",
+  "version": "0.8.0",
+  "author": "ZachTRice",
+  "description": "A webpack and bootstrap boilerplate template for building web pages quickly.",
+  "license": "MIT",
+  "homepage": "https://github.com/bootpack/bootpack#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bootpack/bootpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bootpack/bootpack/issues"
+  },
+  "keywords": [
+    "webpack",
+    "template",
+    "webpage",
+    "starter",
+    "website"
+  ],
+  "scripts": {
+    "build": "webpack --mode=production",
+    "watch": "webpack --watch --mode=development",
+    "start": "webpack-dev-server --mode=development --open",
+    "test": "run-s lint:*",
+    "lint": "run-s lint:*",
+    "lint:css": "stylelint ./src/css/*.css",
+    "lint:js": "eslint .",
+    "generate:images": "node tools/image-generator.js"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "npm": "^6.1.0",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "compression-webpack-plugin": "^1.1.11",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-import": "^0.13.0",
+    "eslint-config-node": "^2.0.0",
+    "eslint-config-promise": "^1.2.6",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "exports-loader": "^0.7.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "js-image-generator": "^1.0.2",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "npm-run-all": "^4.1.3",
+    "optimize-css-assets-webpack-plugin": "^4.0.2",
+    "postcss-loader": "^2.1.5",
+    "precss": "^3.1.2",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^7.0.3",
+    "stylelint": "^9.2.1",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.11.0",
+    "webpack-cli": "^3.0.2",
+    "webpack-dev-server": "^3.1.4",
+    "write-file-webpack-plugin": "^4.3.2"
+  }
+}
