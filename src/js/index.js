@@ -5,8 +5,8 @@ import '../css/components.css';
 import '../css/site.scss';
 
 /* Boostrap 4 Full Bundles */
-import 'bootstrap/dist/js/bootstrap.bundle'; /* Includes popper.js */
-// import 'bootstrap'; /* Does not include popper. js */
+//import 'bootstrap/dist/js/bootstrap.bundle'; /* Includes popper.js */
+import 'bootstrap'; /* Does not include popper. js */
 
 // Uncomment 'popper.js' in webpack.config.js
 
@@ -18,7 +18,7 @@ import 'bootstrap/dist/js/bootstrap.bundle'; /* Includes popper.js */
 // import 'bootstrap/js/dist/dropdown';
 // import 'bootstrap/js/dist/modal';
 // import 'bootstrap/js/dist/popover';
- import 'bootstrap/js/dist/scrollspy';
+// import 'bootstrap/js/dist/scrollspy';
 // import 'bootstrap/js/dist/tab';
 // import 'bootstrap/js/dist/tooltip'; /* requires popper.js */
 // import 'bootstrap/js/dist/util';
@@ -30,20 +30,20 @@ if (process.env.NODE_ENV === 'development') {
 
 //parallax js
 $(document).ready(function(){
-  var $window = $(window);
-  $('section[data-type="background"]').each(function(){
-    var $bgobj = $(this); // assigning the object
+  // var $window = $(window);
+  // $('section[data-type="background"]').each(function(){
+  //   var $bgobj = $(this); // assigning the object
     
-    $(window).scroll(function() {
-      var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+  //   $(window).scroll(function() {
+  //     var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
       
-      // Put together our final background position
-      var coords = '50% '+ yPos + 'px';
+  //     // Put together our final background position
+  //     var coords = '50% '+ yPos + 'px';
       
-      // Move the background
-      $bgobj.css({ backgroundPosition: coords });
-    }); 
-  });    
+  //     // Move the background
+  //     $bgobj.css({ backgroundPosition: coords });
+  //   }); 
+  // });    
   //menu transition js
   
   $(window).scroll(function(){

@@ -1,118 +1,87 @@
+$verde: #0c6e45;
+$texto: #292929;
+
 html {
   position: relative;
-  min-height: 100%;
+  min-height: 100%;  
   body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
     position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;  
+    font-weight: 300;
+    line-height:  2em;
+    color: $texto;
   }
 }
-.navbar-scroll {
-  background-color: rgba(126, 126, 126, 0.8) !important;
+
+.navbar {  
+  background-color: rgba(12, 110, 69, 0.5) !important;  
+}
+.navbar-scroll {  
+  background-color: rgba(12, 110, 69, 0.9) !important;
   transition: background-color 0.5s;
 }
 @media(max-width: 768px){
-    .navbar {background-color: #a0a0a0 !important; }
-}
-/* ============================================================
-  PRIMARY STRUCTURE
-============================================================ */
-.parallax-container {
-  max-width: 960px;
-  margin: 0 auto;
+  .navbar {background-color: rgba(12, 110, 69, 0.9) !important;}
 }
 
-/* ============================================================
-  SECTIONS
-============================================================ */
-section.module:last-child {
-  margin-bottom: 0;
+h1 {  
 }
-section.module h2 {
-  margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
-  font-size: 30px;
-}
-section.module p {
-  margin-bottom: 40px;
-  font-size: 16px;
+h2, h3 {   
+  margin-bottom: 1.5em;
   font-weight: 300;
 }
-section.module p:last-child {
-  margin-bottom: 0;
-}
-section.module.content {
-  padding: 40px 0;
-  background-color: rgba(207,216,220,0.5);
-}
-section.module.content:last-child {
-  margin-bottom: 60px;
-}
-section.module.parallax {
-  padding: 240px 0;
-  background-position: 0 0;
-}
-section.module.parallax h1 {
-  color: #1e1e1e;
-  font-size: 48px;
-  line-height: 1;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px white;
-}
-section.module.parallax-1 {
-  background-image: url("https://i.ytimg.com/vi/SwOaV-pzGcA/maxresdefault.jpg");
-  background-position: 50% 0;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: rgba(0,123,255,0.4);
-  background-blend-mode: screen;
-}
-section.module.parallax-2 {
-  background-image: url("http://www.planwallpaper.com/static/images/Fall-Nature-Background-Pictures.jpg");
-  background-position: 50% 0;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: rgba(0,123,255,0.4);
-  background-blend-mode: screen;
-}
-section.module.parallax-3 {
-  background-image: url("http://www.psd-dude.com/tutorials/resources-images/free-rain-and-raindrop-textures-for-photoshop/raindrops-window-background.jpg");
-  background-position: 50% 0;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: rgba(0,123,255,0.4);
-  background-blend-mode: screen;
+h2 {
+  font-size: 2em;
+  color: $verde;
 }
 
-@media all and (min-width: 600px) {
-  section.module h2 {
-    font-size: 42px;
+h3 {  
+  font-size: 1.8em; 
+}
+
+.center {
+  text-align: center;
+}
+
+/* ============================================================
+SECTIONS
+============================================================ */
+section {
+  padding:  120px 0 60px;
+  &:last-child {
+    margin-bottom: 0;
+  }  
+  p {
+    font-weight: 300;
+    margin-bottom: 1.8em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }  
+  &.parallax {
+    background-position: 0 0;
+    background-position: 50% 0;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    //background-color: rgba(0, 123, 255, 0.4);
+    background-blend-mode: screen;    
   }
-  section.module p {
-    font-size: 20px;
+  &.parallax-sitio {
+    background-image: url("../images/bg-sitio.jpg");    
   }
-  section.module.parallax {
-    padding: 300px 0;
-  }
-  section.module.parallax h1 {
-    font-size: 96px;
+  &.parallax-3 {
+    background-image: url("http://www.psd-dude.com/tutorials/resources-images/free-rain-and-raindrop-textures-for-photoshop/raindrops-window-background.jpg");
   }
 }
-@media all and (min-width: 960px) {
-  section.module.parallax h1 {
-    font-size: 160px;
-  }
-}
+
 /*footer*/
 .footer .container-fluid {
   height: auto;
 }
 .footer {
+  background-color: $verde;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -124,7 +93,7 @@ footer .container-fluid a {
   display: inline-block;
   color: #ddd;
   padding-left: 1em;
- 
+  
 }
 footer .container-fluid p {
   display: inline-block;
@@ -132,19 +101,119 @@ footer .container-fluid p {
   padding-left: 1em;
   padding-right: 2em;
 }
-@media(max-width: 768px){
-    .col-md-4 {
-      text-align: center;
-      line-height: 30px;
+
+/* ============================================================
+FULL VIDEO BACKGROUND
+============================================================ */
+
+.section-full {
+  padding: 0;
+  height:100vh;
+  min-height:100vh;  
   }
+
+.video-background {
+  background: #000;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  //top: 0; right: 0; bottom: 0; left: 0;
+  // z-index: -99;
 }
-.right {
-  text-align: right;
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;  
 }
-.center {
-  text-align: center;
+#vidtop-content {
+	top: 0;
+  color: #fff;
+  display: none;
 }
-.left {
-  text-align: left;
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+
+/*
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+*/
+@media all and (max-width: 600px) {
+  .vid-info { width: 50%; padding: .5rem; }
+  .vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+  .vid-info .acronym { display: none; }
 }
 
+#dados {
+  background: #fff url("../images/bg-estatistica.jpg") no-repeat 0 0;
+  background-size: cover;
+  min-height: 420px;
+  padding: 70px 0;
+  color: #fff;
+  strong {
+    display: block;
+    font-size: 4em;
+  }
+  small {
+    font-size: 0.5em;
+  }
+  span {
+    display: block;
+    margin: 0 auto 40px;
+    padding: 4px 10px;
+    width:  240px;
+    border: solid 1px #fff;
+  }
+}
+
+#joaquim {
+  min-height: 555px;
+  background: #fff url("../images/joaquim.jpg") no-repeat 50%  0;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#educacaoambiental-img {
+  min-height: 698px;
+  background: #fff url("../images/educacao.jpg") no-repeat 50%  0;
+  background-size: cover;
+}
+
+ #educacaoambiental2 {
+  padding: 100px 0;
+  p {
+    padding: 0 0 60px ;
+  }
+}
+
+
+
+#cooperativasolar-img {
+  min-height: 320px;
+  background: #fff url("../images/cooperativa.jpg") no-repeat 50%  0;
+  background-size: cover;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+  padding: 0.5rem 4rem;
+  border-radius: 2rem;
+}
+
+.btn-outline-success {
+  color: $verde;
+  border-color: $verde;
+  &:hover {
+    background-color: $verde !important;
+    border-color: $verde;
+  }
+}
