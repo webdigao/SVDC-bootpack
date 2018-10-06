@@ -1,5 +1,6 @@
 // CSS Imports *include in entry file only
 import '../css/bootstrap.css';
+import '../css/animate.css';
 import '../css/fonts.css';
 import '../css/components.css';
 import '../css/site.scss';
@@ -30,6 +31,9 @@ if (process.env.NODE_ENV === 'development') {
 
 //parallax js
 $(document).ready(function(){
+
+  new WOW().init();
+  
   // var $window = $(window);
   // $('section[data-type="background"]').each(function(){
   //   var $bgobj = $(this); // assigning the object
@@ -81,5 +85,33 @@ $(document).ready(function(){
         window.location.hash = hash;
       });
     }  // End if
-  });  
+  }); 
+
+  // Youtube player
+  window.videoPlayer;
+
+  window.onYouTubeIframeAPIReady = function () {
+   var videoPlayerId = $('#videoPlayer').attr('data-videoid');
+   window.videoPlayer = new YT.Player('videoPlayer', {
+    height: '1080',
+    width: '1920',
+    videoId: videoPlayerId,
+    playerVars: {
+     'controls': 1,
+     'autoplay': 0,
+     'mute': 0,
+     'loop': 0,
+     'showinfo': 0,
+     'modestbranding': 1
+    },
+    events: {
+     'onReady': onVideoPlayerReady,
+     'onStateChange': onVideoPlayerReady
+    }
+   });
+  }
+
+  function onVideoPlayerReady(event) {
+   videoPlayer.playVideo();
+  }
 })

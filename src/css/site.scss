@@ -3,19 +3,21 @@ $texto: #292929;
 
 html {
   position: relative;
-  min-height: 100%;  
+  min-height: 100%;
+  font-size: 18px;  
   body {
     position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;  
-    font-weight: 300;
-    line-height:  1.8em;
+    font-family: 'Montserrat', sans-serif;     
+    font-weight: 400;
+    line-height:  1.8rem;
     color: $texto;
   }
 }
 
 .navbar {  
-  background-color: rgba(12, 110, 69, 0.5) !important;  
+  background-color: rgba(12, 110, 69, 0.5) !important; 
+  font-size: .9em;
+  font-weight: 400;
 }
 .navbar-scroll {  
   background-color: rgba(12, 110, 69, 0.9) !important;
@@ -26,15 +28,20 @@ html {
 }
 
 h2, h3 {   
-  margin-bottom: 1.5em;
-  font-weight: 300;
+  font-weight: 300;  
 }
 h2 {
-  font-size: 2em;
+  margin-bottom: 3.5rem;
+  font-size: 2rem;
   color: $verde;
 }
 h3 {  
-  font-size: 1.8em; 
+  margin-bottom: 2.7rem;
+  font-size: 1.94rem; 
+}
+h4 {
+  color: $verde;
+  font-size: 1rem;
 }
 
 p strong {
@@ -44,7 +51,13 @@ p strong {
 .center {
   text-align: center;
 }
+.left {
+  text-align: left;
+}
 
+.img-fluid {
+  width: 100%;
+}
 /* ============================================================
 SECTIONS
 ============================================================ */
@@ -54,8 +67,7 @@ section {
     margin-bottom: 0;
   }  
   p {
-    font-weight: 300;
-    margin-bottom: 1.8em;
+    margin-bottom: 1.8rem;
     &:last-child {
       margin-bottom: 0;
     }
@@ -77,65 +89,39 @@ section {
   }
 }
 
-/*footer*/
-.footer .container-fluid {
-  height: auto;
-}
-.footer {
-  background-color: $verde;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px;
-}
-footer .container-fluid a {
-  display: inline-block;
-  color: #ddd;
-  padding-left: 1em;
-  
-}
-footer .container-fluid p {
-  display: inline-block;
-  color: #ddd;
-  padding-left: 1em;
-  padding-right: 2em;
-}
-
 /* ============================================================
 FULL VIDEO BACKGROUND
 ============================================================ */
 
 .section-full {
+  position: relative;
+  overflow: hidden;
   padding: 0;
   height:100vh;
   min-height:100vh;  
-  }
+}
+  
+.section-full .video-bg {
+ width: 100%;
+ height: 0;
+ padding-bottom: 56.25%;/* Aspect ratio */
+ position: absolute;
+}
 
-.video-background {
-  background: #000;
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  //top: 0; right: 0; bottom: 0; left: 0;
-  // z-index: -99;
+.section-full .video-bg iframe {
+ border: 0;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
 }
-.video-foreground,
-.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;  
-}
-#vidtop-content {
-	top: 0;
-  color: #fff;
-  display: none;
-}
-.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
-.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
-.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
 
+.section-full .content {
+ position: relative;
+ z-index: 1;
+ display: none;
+}
 /*
 @media (min-aspect-ratio: 16/9) {
   .video-foreground { height: 300%; top: -100%; }
@@ -161,19 +147,25 @@ FULL VIDEO BACKGROUND
   strong {
     display: block;
     margin:  30px 0 0;
-    font-size: 4.5em;    
+    font-size: 4.5rem;    
   }
   small {
-    font-size: 0.5em;
+    font-size: 2.6rem;
     line-height: 0;
   }
   span {
     display: block;
-    margin: 40px auto;
-    line-height:  1.5em;
+    margin: 40px auto;    
+    line-height:  1.5rem;
     padding: 4px 10px;
     width:  240px;
     border: solid 1px #fff;
+  }
+}
+
+#ositio {
+  p {
+    font-weight: 300;
   }
 }
 
@@ -209,8 +201,191 @@ FULL VIDEO BACKGROUND
   }
 }
 
+#horta {
+  #icodina {
+    position: relative;
+    margin-bottom: 60px;
+    div {
+      position: absolute;
+      top: 40%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #FFF;
+      text-align: center;
+      padding: 30px 10% 40px;
+      h5 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 5rem;
+        padding: 0 0  20px 0;
+      }
+    }
+  }
+  .cestas {
+    .opcoes {
+      padding: 20px 0 0 22%;
+      font-size: 1.3rem;
+    }
+  }
+  #extras {
+    width: 400px;
+    margin:  20px auto 80px;
+    text-align: left;
+    line-height: 1.3rem;
+    font-size: 1.3rem;    
+    strong {
+      float: left;
+      color: $verde;
+      display: inline-block;
+      height:  50px;
+      margin-right: 20px;
+      font-weight: 600;
+    }    
+  }
+  #pontos {
+    color: $verde;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;    
+  }
+  #pontos-e {
+    border-right: solid 1px $verde;
+    padding: 0 10%;
+    strong {
+      display: block;
+      color: $verde;
+    }
+  }
+  #pontos-r {
+    padding: 0 10%;
+    strong {
+      display: block;
+      color: $verde;
+    }
+  }
+}
+
+#newsletter {
+  background: #FFF url(../images/bg-newsletter.jpg) no-repeat 0 0;
+  background-size: cover;
+  color: #FFF;
+  padding: 60px 0;
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #FFF;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #FFF;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #FFF;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #FFF;
+  }
+  h3 {
+    margin: 0 0 20px 0;
+  }
+  input:not([type="submit"]) {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color:  #FFF;
+    padding: 17px 25px;
+    position: absolute;
+    bottom: 10%;
+  }
+  button {
+    border-radius: 0;
+    font-size: 1.3rem;
+    padding: 15px 30px;
+    letter-spacing: -1px;
+    position: absolute;
+    bottom: 10%;
+    margin-left: 40px;
+  }
+}
+
+
+#noticias {
+  background-color: $verde;
+  min-height: 800px;
+  h2 {
+    color: #FFF;
+  }
+  p.subtitle {
+    color: #FFF;
+  }
+  .row {
+    padding: 0 60px;
+    margin-top: 100px;
+  }
+  .img-news {
+    padding: 0;    
+  }
+  .txt-news {
+    padding: 40px;
+    background-color: #FFF;
+    color: #000;    
+    h6 {
+      font-size: 1.6rem;
+    }
+    hr {
+      color: $verde;
+      background-color: $verde;
+      width: 80px;
+      height: 3px;
+      margin-bottom: 20px;;
+    }
+    button {
+      border-radius: 0;
+      padding:  10px 40px;
+    }
+  }
+  .row.black {
+    .txt-news {
+      background-color: #000;
+      color: #FFF;
+      h6 {
+        color: #FFF;  
+      }
+    }    
+  }
+}
+
+#contato {
+  h2 {
+    margin-bottom: 20px;
+  }
+  p.emailcontato {
+    font-weight: 600;
+    font-size: 2rem;
+    color: $verde;
+    padding: 20px 0;
+  }
+  form {
+    p {
+      color: $verde;
+      font-size: 1.6rem;
+      padding: 0 0 20px 0;
+      margin: 0;
+    }
+    input:not([type="submit"]), textarea {
+      width: 100%;
+      background-color: #ececec;
+      border: none;
+      color:  rgb(128,117,117);
+      margin-bottom: 10px;
+      padding: 15px;
+    }
+    button {
+      border-radius: 0;
+      padding: 15px 70px;
+      float: right;
+      font-size: 1.6rem;
+    }
+  }  
+}
+
 .btn-lg, .btn-group-lg > .btn {
-  padding: 0.5rem 4rem;
+  padding: 16px 100px;
   border-radius: 2rem;
 }
 
@@ -222,6 +397,50 @@ FULL VIDEO BACKGROUND
     border-color: $verde;
   }
 }
+
+#siganos {
+  background-color:  #ececec;
+  padding: 80px 0;
+  a {
+    color:$verde;
+    font-size: 1.3rem;
+    padding-left: 45px;
+    line-height: 1.8rem;
+    display: inline-block;
+  }
+  .facebook {
+    background: transparent url(../images/ico-fb.png) no-repeat 0 50%;
+  }
+  .insta {
+    background: transparent url(../images/ico-insta.png) no-repeat 0 50%;
+  }
+  .youtube {
+    background: transparent url(../images/ico-yt.png) no-repeat 0 50%;
+  }
+}
+
+/*footer*/
+.footer {
+  background-color: $verde;
+  color: #FFF;
+  padding: 40px 0 20px;;
+  font-size: .8rem;
+  line-height: 1.7rem;
+  img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  .navbar-nav {
+    a {
+      color: #FFF;
+      padding: 0;
+      &:hover {
+        color: #CCC;
+      }
+    } 
+  }
+}
+
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {  }

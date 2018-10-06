@@ -13,7 +13,8 @@
   <meta name="msapplication-TileColor" content="#2d89ef">
   <meta name="theme-color" content="#ffffff">
   <title>Sítio Vale das Cabras</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
 
@@ -31,165 +32,427 @@
           <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
         </li> -->
         <li class="nav-item"><a class="nav-link" href="#ositio">O Sítio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#educacaoambiental">Educação Ambiental</a></li>
-        <li class="nav-item"><a class="nav-link" href="#cooperativasolar">Cooperativa Solar</a></li>       
-      </ul>     
+        <li class="nav-item"><a class="nav-link" href="#educacaoambiental">Educação</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cooperativasolar">Cooperativa Solar</a></li>
+        <li class="nav-item"><a class="nav-link" href="#horta">Horta</a></li>
+        <li class="nav-item"><a class="nav-link" href="#agrofloresta">Agrofloresta</a></li>
+        <li class="nav-item"><a class="nav-link" href="#alimentacao">Alimentação</a></li>
+        <li class="nav-item"><a class="nav-link" href="#bioconstrucao">Bioconstrução</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gestaohidrica">Gestão Hídrica</a></li>
+        <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
     </div>
   </nav>
   
-  <section class="section-full">
-    <div class="video-background">
-      <div class="video-foreground">
-        <iframe src="//www.youtube.com/embed/vllv6mU7vy8?controls=0&showinfo=0&rel=0&autoplay=1&loop=0" frameborder="0" allowfullscreen></iframe>
+  <!--  HOME - VIDEO -->  
+  <header class="section-full">    
+    <div class="video-bg">
+      <div id="videoPlayer" data-videoid="vllv6mU7vy8"></div>
+    </div>
+    <!-- <div class="content">
+      <h1>Video Player background</h1>
+      <h3>Full screen youtube video player in background.</h3>
+    </div> -->    
+  </header>
+  
+  <!-- DADOS -->  
+  <section  id="dados" class="">
+    <div class="container">
+      <div class="row center">
+        <div class="col wow slideInLeft">
+          <img src="images/ico-estatisticas-1.png" alt="Associados"><br />
+          <strong>50</strong>
+          <span> ASSOCIADOS AO CSA<br />HORTA DE ORGÂNICOS</span>
+        </div>
+        <div class="col wow slideInUp">
+          <img src="images/ico-estatisticas-2.png" alt="Energia Limpa"><br />
+          <strong>1.100</strong>
+          <span>kWh / MÊS GERADOS<br />EM ENERGIA LIMPA </span>
+        </div>
+        <div class="col wow slideInRight">
+          <img src="images/ico-estatisticas-3.png" alt="Agrofloresta"><br />
+          <strong>5.000<small>m2</small></strong>
+          <span>ÁREA DE<br />AGROFLORESTA</span>
+        </div>
       </div>
-    </div>    
-    <div id="vidtop-content">
-      <div class="vid-info">
-        <h1>YouTube Fullscreen Background Demo</h1>
-        <strong>The International Space Station orbits the Earth every 92 minutes, with its crew seeing a sunrise 15 times a day. It exists as a scientific, educational, and engineering platform in low orbit, 330 to 435 kilometres above the Earth.
-          <span>Original timelapse by Riccardo Rossi (ISAA), used under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Raw photos courtesy of http://eol.jsc.nasa.gov/
-            <a href="/500/Use-YouTube-Videos-as-Fullscreen-Web-Page-Backgrounds">Full article</a>
-          </div>
-        </div>
-      </section>
-      
-      <section  id="dados" class="">
-        <div class="container">
-          <div class="row center">
-            <div class="col">
-              <img src="images/ico-estatisticas-1.png" alt="Associados"><br />
-              <strong>50</strong>
-              <span> ASSOCIADOS AO CSA HORTA DE ORGÂNICOS</span>
-            </div>
-            <div class="col">
-              <img src="images/ico-estatisticas-2.png" alt="Energia Limpa"><br />
-              <strong>1.100</strong>
-              <span>kWh / MÊS GERADOS<br />EM ENERGIA LIMPA </span>
-            </div>
-            <div class="col">
-              <img src="images/ico-estatisticas-3.png" alt="Agrofloresta"><br />
-              <strong>5.000<small>m2</small></strong>
-              <span>ÁREA DE<br />AGROFLORESTA</span>
-            </div>
-          </div>
-        </div>
-      </section>
-			
-			<section id="ositio" class="parallax parallax-sitio" data-type="background" data-speed="10">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-              <h2>Bem-vindo ao Sítio</h2>
-              <p>O Sítio Vale das Cabras está situado na zona rural do distrito de Joaquim Egídio, na cidade de Campinas / SP, inserido na Área de Proteção Ambiental de Campinas (APA Campinas).</p>
-              <p>Tudo começou em 2012, quando adquirimos uma área rural degradada de 2 hectares com a vontade de transformá-la em um local produtor de serviços ambientais e modelo de transformação socioambiental na região.</p>
-              <p>Nossa missão é ser um centro de referência em sustentabilidade. Nossos objetivos são desenvolver atividades de inovação socioambiental, trabalhar em colaboração e construir aprendizados.</p>
-              <p>Os trabalhos no Sítio estão estruturados nos eixos da gestão hídrica, agroecologia, bioconstrução, energia renovável, educação ambiental e alimentação consciente.</p>
-						</div>          
-					</div>
-				</div>
-      </section>
-      
-      <section id="joaquim" class=""></section>
-      
-      <section  id="educacaoambiental" class="">
-        <div class="container">
+    </div>
+  </section>
+  
+  <!-- O SÍTIO -->  
+  <section id="ositio" class="parallax parallax-sitio" data-type="background" data-speed="10">
+    <div class="container">
+      <div class="row">
+        <div class="col wow fadeIn">
+          <h2 class="wow slideInLeft">Bem-vindo ao Sítio</h2>
+          <p>O Sítio Vale das Cabras está situado na zona rural do distrito de Joaquim Egídio, na cidade de Campinas / SP, inserido na Área de Proteção Ambiental de Campinas (APA Campinas).</p>
+          <p>Tudo começou em 2012, quando adquirimos uma área rural degradada de 2 hectares com a vontade de transformá-la em um local produtor de serviços ambientais e modelo de transformação socioambiental na região.</p>
+          <p>Nossa missão é ser um centro de referência em sustentabilidade. Nossos objetivos são desenvolver atividades de inovação socioambiental, trabalhar em colaboração e construir aprendizados.</p>
+          <p>Os trabalhos no Sítio estão estruturados nos eixos da gestão hídrica, agroecologia, bioconstrução, energia renovável, educação ambiental e alimentação consciente.</p>
+        </div>          
+      </div>
+    </div>
+  </section>
+  
+  <section id="joaquim" class=""></section>
+  
+  <!-- EDUCAÇÃO AMBIENTAL -->  
+  <section  id="educacaoambiental" class="">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="wow slideInLeft">Educação Ambiental</h2>
+          <h3 class="wow fadeIn" data-wow-delay="1s">Educando os valores sustentáveis de amanhã</h3>
+          <p>Somos uma equipe multidisciplinar de gestores e educadores ambientais. Desenvolvemos um trabalho em parceria com as escolas para a construção de um projeto de educação ambiental continuado.</p>                  
+        </div>          
+      </div>
+    </div>
+  </section>
+  
+  <section id="educacaoambiental-img" class="wow zoomIn"></section>
+  
+  <section  id="educacaoambiental2" class="">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Apresentamos duas opções de roteiros para alunos do ensino infantil, fundamental e universitário. Realizamos atividades práticas com grupos de estudantes, professores e pais. A partir dessas experiências, desenhamos o projeto pedagógico de educação em colaboração com as escolas parceiras.</p>
           <div class="row">
+            <div class="col wow slideInLeft"><img src="images/educacao-1.jpg" class="img-fluid" alt=""></div>
+            <div class="col wow slideInRight"><img src="images/educacao-2.jpg" class="img-fluid" alt=""></div>
+          </div>
+          <br /><br />
+          <p>Vamos conversar sobre a educação ambiental dos seus alunos?</p>
+          <p class="center"><button  type="button" class="btn btn-lg btn-outline-success wow fadeIn">TENHO INTERESSE</button></p>
+        </div>          
+      </div>
+    </div>
+  </section>
+  
+  <!-- COOPERATIVA SOLAR -->  
+  <section  id="cooperativasolar-img" class="wow fadeIn"></section>
+  
+  <section  id="cooperativasolar" class="">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="wow slideInLeft">Cooperativa Solar</h2>
+          <h3 class="wow fadeIn" data-wow-delay="1s">Promovendo a sustentabilidade e as energias renováveis</h3>
+          <p>A Coopsolar é uma cooperativa para a geração de energia renovável de abrangência nacional. Sua proposta é <strong>promover o acesso dos cidadãos às fontes renováveis de energia</strong>, tornando cada cooperado um produtor de energia elétrica com impacto socioambiental positivo e retorno econômico.</p>
+          <div class="row">
+            <div class="col"><img src="images/cooperativa-2.jpg" class="img-fluid wow slideInLeft" alt=""></div>
             <div class="col">
-              <h2>Educação Ambiental</h2>
-              <h3>Educando os valores sustentáveis de amanhã</h3>
-              <p>Somos uma equipe multidisciplinar de gestores e educadores ambientais. Desenvolvemos um trabalho em parceria com as escolas para a construção de um projeto de educação ambiental continuado.</p>                  
-            </div>          
+              <p>Desde março de 2016, a Agência Nacional de Energia Elétrica (ANEEL) permitiu a geração compartilhada de energia renovável através das cooperativas de energia, possibilitando que a energia elétrica gerada por uma cooperativa seja compensada na conta de luz do cooperado em sua residência ou empresa. Este modelo permite que todos possam produzir energia renovável sem precisar instalar um sistema individual em seu telhado. Basta possuir uma conta de luz em seu nome e estar localizado na área da mesma distribuidora de energia.</p>
+              <p>No Sítio Vale das Cabras está instalado um sistema para geração de energia fotovoltaica (energia elétrica através do sol) com capacidade para atender 15 associados na cidade de Campinas e região. </p>
+            </div>
+          </div>
+          <br /><br />
+          <p>A energia gerada no sítio será compensada na conta de luz dos cooperados em suas residências na cidade, gerando economia para os associados. </p>
+          <p>Trata-se de um projeto piloto e inovador na geração compartilhada de energia renovável e a Coopsolar tem como objetivo replicar o modelo em todo país. </p>
+          <p>Dados técnicos da usina solar no Sítio Vale de Cabras:</p>
+          <ul>
+            <li>Potência: 30 kWp</li>
+            <li>Geração anual de energia = 52.000 kWh</li>
+            <li>Beneficiários = 15 cooperados</li>
+            <li>Redução de gases do efeito estufa = 15 toneladas de CO2/ano</li>
+          </ul>                  
+        </div>              
+      </div>
+      <br />
+      <div class="row">
+        <div class="col offset-md-2">
+          <p><strong>Parceiros:</strong></p>
+          <img src="images/agirverde-logo.png" class="" alt="">
+        </div>
+        <div class="col">
+          <p></p>
+          <img src="images/eudora-logo.png" class="" alt="">
+        </div>
+      </div>
+      <br /><br /><br />
+      <p class="center"><button  type="button" class="btn btn-lg btn-outline-success wow fadeIn">TENHO INTERESSE</button></p>
+    </div>
+  </section>
+  
+  <!-- HORTA CSA -->  
+  <section  id="horta" class="">
+    <div class="container">
+      <h4 class="wow slideInLeft">Agroecologia</h4>
+      <h2 class="wow slideInLeft">Horta CSA</h2>
+      <h3 class="wow fadeIn" data-wow-delay="1s">A Comunidade que Sustenta a Agricultura</h3>
+      <p>O termo CSA quer dizer Comunidade que Sustenta a Agricultura ( Community Supported Agriculture). Se trata de um modelo de sucesso para um desenvolvimento agrário sustentável e que aproxima os produtos orgânicos locais de uma forma direta ao consumidor/associado.</p>
+      <div id="icodina">
+        <img src="images/horta.jpg" class="img-fluid" alt="Ico e Dina">
+        <div class="wow zoomIn">
+          <h5>Ico e Dina</h5>
+          <p>Olá, somos o Ico e a Dina, produtores rurais na horta de orgânicos do Sítio Vale das Cabras. Todas as semanas levamos frutas, vegetais e legumes orgânicos, colhidos na mesma manhã e os entregamos diretamente na mão dos associados. O modelo CSA adotado pelo Sítio permite que eles recebam um alimento saudável, fresco e a um preço justo. Os associados colhem o que estão ajudando a plantar: uma vida mais sustentável. Vem com a gente?</p>
+        </div>
+      </div>            
+      <h3 class="wow fadeIn" data-wow-delay="1s">Como funciona?</h3>
+      <p>Um grupo fixo de consumidores se compromete a cobrir o orçamento da produção agrícola local, recebendo os alimentos produzidos pelo sitio, mais frescos e sem custos de intermediários. Desta forma o produtor sem a pressão do mercado e do preço, pode se dedicar de forma livre a sua produção. E os consumidores recebem produtos de qualidade, sabendo quem os produz e aonde são produzidos.</p>
+      <p>Desta forma, o produtor, sem a pressão de mercado e do preço, pode se dedicar de forma livre à sua produção. Os consumidores recebem produtos de qualidade, conhecem quem produz e onde são produzidos.</p>            
+      <br />
+      <img src="images/horta-2.jpg" class="img-fluid wow fadeIn" alt="">
+      <br /><br /><br />
+      <p class="center"><button  type="button" class="btn btn-lg btn-outline-success wow fadeIn">BAIXE A CARTILHA DO ASSOCIADO</button></p>
+      <br /><br />
+      <h2 class="center">ESCOLHA UMA OPÇÃO</h2>            
+      <div class="row cestas center">
+        <div class="col wow flipInY">
+          <img src="images/opcao-1.png" alt="">
+          <div class="opcoes left">
+            2 verduras<br />
+            3 legumes / raízes<br />
+            (300 a 500g)<br />
+            2 temperos / ervas<br /><br />
+            <strong>R$ 109,00</strong>
           </div>
         </div>
-      </section>
-      
-      <section id="educacaoambiental-img" class=""></section>
-      
-      <section  id="educacaoambiental2" class="">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <p>Apresentamos duas opções de roteiros para alunos do ensino infantil, fundamental e universitário. Realizamos atividades práticas com grupos de estudantes, professores e pais. A partir dessas experiências, desenhamos o projeto pedagógico de educação em colaboração com as escolas parceiras.</p>
-              <div class="row">
-                <div class="col"><img src="images/educacao-1.jpg" class="img-fluid" alt=""></div>
-                <div class="col"><img src="images/educacao-2.jpg" class="img-fluid" alt=""></div>
-              </div>
-              <br>
-              <p>Vamos conversar sobre a educação ambiental dos seus alunos?</p>
-              <p class="center"><button  type="button" class="btn btn-lg btn-outline-success">TENHO INTERESSE</button></p>
-            </div>          
+        <div class="col wow flipInY" data-wow-delay="1s">
+          <img src="images/opcao-2.png" alt="">
+          <div class="opcoes left">
+            3 verduras<br />
+            4 legumes / raízes<br />
+            (300 a 500g)<br />
+            2 temperos / ervas<br /><br />
+            <strong>R$ 142,00</strong>
           </div>
         </div>
-      </section>
-      
-      <section  id="cooperativasolar-img"></section>
-      
-      <section  id="cooperativasolar" class="">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>Cooperativa Solar</h2>
-              <h3>Promovendo a sustentabilidade e as energias renováveis</h3>
-              <p>A Coopsolar é uma cooperativa para a geração de energia renovável de abrangência nacional. Sua proposta é <strong>promover o acesso dos cidadãos às fontes renováveis de energia</strong>, tornando cada cooperado um produtor de energia elétrica com impacto socioambiental positivo e retorno econômico.</strongp>
-                <div class="row">
-                  <div class="col"><img src="images/cooperativa-2.jpg" class="img-fluid" alt=""></div>
-                  <div class="col">
-                    <p>Desde março de 2016, a Agência Nacional de Energia Elétrica (ANEEL) permitiu a geração compartilhada de energia renovável através das cooperativas de energia, possibilitando que a energia elétrica gerada por uma cooperativa seja compensada na conta de luz do cooperado em sua residência ou empresa. Este modelo permite que todos possam produzir energia renovável sem precisar instalar um sistema individual em seu telhado. Basta possuir uma conta de luz em seu nome e estar localizado na área da mesma distribuidora de energia.</p>
-                    <p>No Sítio Vale das Cabras está instalado um sistema para geração de energia fotovoltaica (energia elétrica através do sol) com capacidade para atender 15 associados na cidade de Campinas e região. </p>
-                  </div>
-                </div>
-                <br />
-                <p>A energia gerada no sítio será compensada na conta de luz dos cooperados em suas residências na cidade, gerando economia para os associados. </p>
-                <p>Trata-se de um projeto piloto e inovador na geração compartilhada de energia renovável e a Coopsolar tem como objetivo replicar o modelo em todo país. </p>
-                <p>Dados técnicos da usina solar no Sítio Vale de Cabras:</p>
-                <ul>
-                  <li>Potência: 30 kWp</li>
-                  <li>Geração anual de energia = 52.000 kWh</li>
-                  <li>Beneficiários = 15 cooperados</li>
-                  <li>Redução de gases do efeito estufa = 15 toneladas de CO2/ano</li>
-                </ul>                  
-              </div>              
-            </div>
-            <br />
-            <div class="row">
-              <div class="col offset-md-2">
-                <p><strong>Parceiros:</strong></p>
-                <img src="images/agirverde-logo.png" class="" alt="">
-              </div>
-              <div class="col">
-                  <p></p>
-                  <img src="images/eudora-logo.png" class="" alt="">
-              </div>
-            </div>
+        <div class="col wow flipInY" data-wow-delay="2s">
+          <img src="images/opcao-3.png" alt="">
+          <div class="opcoes left">
+            4 verduras<br />
+            4 legumes / raízes<br />
+            (600g a 1kg)<br />
+            2 temperos / ervas<br /><br />
+            <strong>R$ 236,00</strong>
           </div>
-        </section>
-        
-        <footer class="footer"> 
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-xs-6 col-md-4 left">
-                <p>&copy; sitiovaledascabras.com.br</p>
-              </div>
-              <div class="col-xs-6 col-md-4 left">
-                <a href="#top">Início</a>               
-              </div>
-              <div class="col-xs-6 col-md-4 right">
-                <a href="#" class="btn btn-social-icon btn-twitter">
-                  <span class="fa fa-twitter"></span>
-                </a>
-                <a href="#" class="btn btn-social-icon btn-facebook">
-                  <span class="fa fa-facebook"></span>
-                </a>
-                <a href="#" class="btn btn-social-icon btn-instagram">
-                  <span class="fa fa-instagram"></span>
-                </a>
-              </div>
-            </div>
+        </div>        
+      </div>
+      <br />
+      <p id="extras" class="center"><strong>Extras</strong>  Ovos Caipira, Queijo Fresco e Frutas da Época </p>
+      <p id="pontos" class="center">Pontos de retirada</p>
+      <div class="row">
+        <div id="pontos-e" class="col center">
+          Terças-feiras de 11h às 13h<br > em Barão Geraldo - Campinas<br /><br />
+          <strong>Atelie Cozinha lá em casa</strong>
+          Rua Aldo Grigol, 600
+        </div>
+        <div id="pontos-r" class="col center">
+          Quartas-feiras de 11h às 13h<br />no Cambuí - Campinas<br /><br />
+          <strong>Empório Viver</strong>
+          Rua Dr. Sampaio Peixoto, 172
+        </div>
+      </div>
+      <br /><br />
+      <p class="center"><button  type="button" class="btn btn-lg btn-outline-success wow fadeIn">TENHO INTERESSE</button></p>
+    </div>
+  </section>
+  
+  <!-- AGROFLORESTA -->  
+  <section  id="agrofloresta" class="">
+    <div class="container">
+      <h4 class="wow slideInLeft">Agroecologia</h4>
+      <h2 class="wow slideInLeft">AGROFLORESTA</h2>
+      <h3 class="wow fadeIn" data-wow-delay="1s">Compensação ambiental e restauração da Mata Atlântica em áreas rurais</h3>
+      <p>
+        O Sítio Vale das Cabras está reflorestando uma área de 5.000m² no sistema agroflorestal, isto é, consorciando espécies de mudas nativas com frutas e hortaliças.<br />
+        É um projeto pioneiro na região e está inserido dentro do programa da Prefeitura de Campinas (Banco de Áreas Verdes) para compensação ambiental e restauração da Mata Atlântica em áreas rurais.
+      </p>
+    </div>
+    <img src="images/agrofloresta.jpg" class="img-fluid" alt="">
+    <br /><br /><br /> 
+    <div class="container">
+      <p>O objetivo do reflorestamento em sistema agroflorestal é potencializar as políticas públicas de reflorestamento no sentido de tornar as áreas rurais verdadeiras produtoras de serviços ambientais para as cidades, fornecendo água, alimentos, biodiversidade e beleza cênica. </p>
+      <p>Neste sentido, deselvolvemos um modelo de negócios no qual o proprietário rural que necessita recuperar áreas de proteção ambiental participe dos programas públicos de reflorestamento, tornando sua área reflorestada e com produção agrícola comercial. Em troca, o negócio se responsabiliza pela manutenção e produção da área por longo prazo, sendo remunerado por parte da produção de hortaliças e frutas. Com a produção orgânica em escala, é possível acessar os programas públicos de aquisição de alimentos como as compras governamentais para a merenda escolar.</p>
+      <br />
+      <iframe src="//www.youtube.com/embed/vllv6mU7vy8?controls=0&showinfo=0&rel=0&autoplay=1&loop=0" frameborder="0" allowfullscreen width="100%" height="500px"></iframe>
+      <br /><br /><br />
+      <p class="center"><button  type="button" class="btn btn-lg btn-outline-success wow fadeIn">TENHO INTERESSE</button></p>
+    </div>
+  </section>
+  
+  <!-- ALIMENTAÇÃO CONSCIENTE -->  
+  <section  id="alimentacao" class="">
+    <div class="container">
+      <h2 class="wow slideInLeft">ALIMENTAÇÃO CONSCIENTE</h2>
+      <h3 class="wow fadeIn" data-wow-delay="1s">O que alimentamos quando nos alimentamos?</h3>
+      <p>Quando falamos em sustentabilidade, relacionamos imediatamente com o universo externo, mas será que é só isso mesmo? Se pensarmos profundamente sobre isso, vamos entender que o processo começa primeiramente com nós mesmos. </p>
+      <p>Adotar uma atitude sustentável é consequência de um processo de conscientização. E através de cuidados com nosso corpo podemos perceber o quanto somos impactados e impactamos nosso entorno.</p>
+      <img src="images/alimentacao.jpg" class="img-fluid wow zoomIn" alt="">
+      <br /><br />
+      <p>Os prazeres e emoções que a comida nos traz! Através do preparo de alimentos, podemos exercitar nossa intuiçãoe afeto, além de estreitar nossa relação com a natureza, a externa e a interna. </p>
+      <p>Queremos alimentar uma cadeia produtiva e de consumo justa, que valoriza o trabalho do produtor e disponibiliza comida livre de veneno aos consumidores.</p>
+      <p>Quer aprender a se alimentar bem, preparar alimentos deliciosos e que nutrem o corpo e a alma? Escreve para a gente!</p>
+      <br /><br />
+      <p class="center"><button  type="button" class="btn btn-lg btn-outline-success wow fadeIn">TENHO INTERESSE</button></p>
+    </div>
+  </section>
+  
+  <!-- BIOCONSTRUÇÃO -->  
+  <section  id="bioconstrucao" class="">
+    <div class="container">
+      <h2 class="wow slideInLeft">BIOCONSTRUÇÃO</h2>
+    </div>
+    <img src="images/bioconstrucao.jpg" class="img-fluid wow fadeIn" alt="">
+    <br /><br /><br />
+    <div class="container">
+      <h3 class="wow fadeIn" data-wow-delay="1s">Integrada na natureza, morada da alma</h3>      
+      <p>A casa sede do Sítio Vale das Cabras é uma construção em que convergem conhecimentos e técnicas tradicionais e o uso de tecnologias atuais para a criação de uma casa contemporânea, sob o guarda chuva da sustentabilidade.</p>
+      <p>A construção foi executada com tijolos de terra crua (adobes), iluminação natural, ventilação cruzada, estrutura de madeira, captação de água da chuva, cuidados com a eficiência energética, aquecimento solar da água e telhado verde entre outras técnicas de arquitetura ecológica</p>
+      <br /><br />
+      <img src="images/bioconstrucao-2.jpg" class="img-fluid" alt="">
+      <br /><br />
+      <img src="images/bioconstrucao-3.jpg" class="img-fluid" alt="">
+      <br /><br /><br />
+      <h3 class="wow fadeIn" data-wow-delay="1s">Resultados</h3>
+      <p>
+        O projeto mostrou-se economicamente viável, uma vez que seu custo global ficou abaixo do valor de mercado de uma construção convencional de mesmo padrão. <br />
+        Em termos ambientais, a pegada ecológica da construção é consideravelmente melhor em termos de redução de consumo de água, energia, madeira e resíduos. Ao mesmo tempo em que proporciona serviços ambientais de duração contínua.<br />
+        E o mais significativo do projeto foi a percepção de que, assim como a casa, o canteiro de obras é um sistema orgânico, onde a colaboração e a cocriação proporcionam aprendizados e experiências mútuas que valorizam a relação humana e geram uma nova consciência para a transformação social.
+      </p>
+      <br />
+      <p class="center"><button  type="button" class="btn btn-lg btn-outline-success wow fadeIn">TENHO INTERESSE</button></p>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section  id="newsletter" class="">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-4">
+            <h3 class="wow fadeIn" data-wow-delay="1s">NEWSLETTER</h3>
+            <p>Receba periódicamente as novidades do Sítio Vale das Cabras sobre atividades, oficinas e vivências em permacultura e sustentabilidade. </p>
+          </div>          
+          <div class="col-md-4"><form action=""><input type="text" placeholder="DEIXE SEU E-MAIL"></div>
+          <div class="col"><button type="button" class="btn btn-lg btn-outline-light">QUERO RECEBER</button></form></div>
+          
+        </div>
+      </div>
+    </section>
+
+   <!-- GESTÃO HÍDRICA -->  
+   <section  id="gestaohidrica" class="">
+      <div class="container">
+        <h2 class="wow slideInLeft">GESTÃO HÍDRICA</h2>
+      </div>
+      <img src="images/gestao-hidrica.jpg" class="img-fluid" alt="">
+      <br /><br /><br />
+      <div class="container">
+        <h3 class="wow fadeIn" data-wow-delay="1s">Água, elemento essencial para a vida.</h3>
+        <p>Sob este olhar foi feito o planejamento permacultural do Sítio Vale das Cabras. Como tornar a água presente em todo o ambiente, mesmo não havendo nascentes e cursos d´água? A estratégia para gestão hídrica é a captação da água de chuva, em seu maior volume possível. Possuímos 3 açudes (um já virou lago!), valas de infiltração, plantação em curva de nível. Quando chove, a água não vai embora terreno abaixo, ela é captada e infiltra lentamente no solo. Assim, armazenamos muita água de chuva em nosso subsolo, abastecendo nossos dois poços caipiras (poços rasos), que são nossas fontes de água potável. Também armazenamos a água que cai no telhado da casa numa cisterna de 15 mil litros.  Somos produtor de água, porque estamos reflorestando uma grande área do sítio no modelo agroflorestal. A chuva que cai na floresta é captada pelas árvores e pelo solo, infiltrando lentamente. Completando o ciclo, a água do poço é usada na irrigação e vai para os alimentos orgânicos, que, por sua vez, vão para as famílias na cidade.</p>
+        <br /><br />
+        <img src="images/gestao-hidrica-2.jpg" class="img-fluid" alt="">
+        <br /><br /><br />       
+        <p class="center"><button  type="button" class="btn btn-lg btn-outline-success wow fadeIn">TENHO INTERESSE</button></p>
+      </div>
+    </section>
+
+    <!-- NOTÍCIAS -->  
+   <section  id="noticias" class="">
+      <div class="container">
+        <h2 class="wow slideInLeft">NOTÍCIAS</h2>
+        <p class="subtitle">Fique por dentro de tudo o que está acontecendo no Sítio Vale das Cabras e nossas próximas atividades e oficinas. </p>
+        <div class="row">
+          <div class="col-4 img-news"><img src="images/educacao-1.jpg" class="img-fluid" alt=""></div>
+          <div class="col-8 txt-news">
+            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h6>
+            <hr align="left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, nam eligendi odit incidunt cupiditate saepe non, ducimus natus, nulla nihil fugiat. Possimus repudiandae amet voluptatibus sapiente commodi consequatur doloremque mollitia!</p>
+            <button  type="button" class="btn btn-lg btn-outline-success wow fadeIn">LEIA MAIS</button></p>
           </div>
-        </footer>
-        
-        <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="js/index.js"></script>
-      </body>
-      </html>
-      
+        </div>
+        <div class="row black">
+          <div class="col-4 img-news"><img src="images/educacao-1.jpg" class="img-fluid" alt=""></div>
+          <div class="col-8 txt-news">
+            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h6>
+            <hr align="left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, nam eligendi odit incidunt cupiditate saepe non, ducimus natus, nulla nihil fugiat. Possimus repudiandae amet voluptatibus sapiente commodi consequatur doloremque mollitia!</p>
+            <button  type="button" class="btn btn-lg btn-outline-light wow fadeIn">LEIA MAIS</button></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 img-news"><img src="images/educacao-1.jpg" class="img-fluid" alt=""></div>
+          <div class="col-8 txt-news">
+            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h6>
+            <hr align="left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, nam eligendi odit incidunt cupiditate saepe non, ducimus natus, nulla nihil fugiat. Possimus repudiandae amet voluptatibus sapiente commodi consequatur doloremque mollitia!</p>
+            <button  type="button" class="btn btn-lg btn-outline-success wow fadeIn">LEIA MAIS</button></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section  id="contato" class="">
+      <div class="container">
+        <h2 class="wow slideInLeft">CONTATO</h2>
+        <p>Entre em contato com a gente através de um de nossos canais de comunicação abaixo.</p>
+        <p class="emailcontato center">contato@sitiovaledascabras.com.br </p>
+        <div class="row">
+          <div class="col-md-8 offset-md-2">              
+            <form>
+             <p>FALE CONOSCO</p> 
+             <input type="text" name="user" placeholder="NOME">
+             <input type="email" name="email" placeholder="E-MAIL">
+             <textarea name="mensagem" id="" rows="5">MENSAGEM</textarea>
+             <button  type="submit" class="btn btn-lg btn-outline-success wow fadeIn">ENVIAR</button>
+           </form>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <section  id="siganos" class="">
+    <div class="container">
+      <h2>SIGA-NOS</h2>
+      <div class="row">
+        <div class="col">
+          <a href="https://www.facebook.com/sitiovaledascabras" target="_blank" class="facebook">sitiovaledascabras</a>
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/sitiovaledascabras/" target="_blank" class="insta">@sitiovaledascabras</a>
+        </div>
+        <div class="col">
+          <a href="https://www.youtube.com/channel/UCExZuoXKkPLhgSGYGmhn9yw" target="_blank" class="youtube">sitiovaledascabras</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- RODAPÉ -->
+  <footer class="footer"> 
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="images/logo-sitio.png" alt="logo sitio">
+          <p>
+            Estrada das Cabras, km 13,5<br />
+            CEP 13010- 201 - Joaquim Egídio<br />
+            Campinas - São Paulo<br />
+            T. (19) 99831 3090<br />
+            <i>* Visitas somente com horário agendado</i>
+          </p>
+        </div>
+        <div class="col offset-md-5">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#ositio">O Sítio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#educacaoambiental">Educação Ambiental</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cooperativasolar">Cooperativa Solar</a></li>
+            <li class="nav-item"><a class="nav-link" href="#horta">Horta CSA</a></li>
+            <li class="nav-item"><a class="nav-link" href="#agrofloresta">Agrofloresta</a></li>
+            <li class="nav-item"><a class="nav-link" href="#alimentacao">Alimentação Consciente</a></li>
+            <li class="nav-item"><a class="nav-link" href="#bioconstrucao">Bioconstrução</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gestaohidrica">Gestão Hídrica</a></li>
+            <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>        
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
