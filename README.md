@@ -56,7 +56,7 @@ Bootstrap 4 is imported into main.css via `@import "~bootstrap/scss/bootstrap";`
 Download to your project directory, add `README.md`, and commit:
 
 ```sh
-git clone https://github.com/bootpack/bootpack.git
+git clone https://github.com/webdigao/SVDC-bootpack.git
 npm install
 npm run build
 npm start
